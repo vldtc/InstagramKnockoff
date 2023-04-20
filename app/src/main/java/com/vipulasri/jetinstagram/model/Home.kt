@@ -44,3 +44,23 @@ val usernames = arrayOf(
     "Vladut Cirlan",
     "Adam Mukkarim"
 )
+
+val places = arrayOf(
+    "London-Tower Bridge",
+    "Madame Tussad-London",
+    "London Eye-London",
+    "Covent Garden",
+    "London Bridge",
+    "East India",
+    "East Ham",
+    "Search"
+)
+
+val songs = arrayOf(
+    "Happy Moments-Inod",
+    "Beautiful Day-Jonathan Roy",
+    "One Kiss-Dua Lipa",
+    "Despasito-Luis Fonsi",
+    "People-Libianca",
+    "Calm Down-Rema",
+)
