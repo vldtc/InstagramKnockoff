@@ -279,11 +279,13 @@ fun OtherIGAccountsSection() {
             color = Color.Black
         )
     }
-    IGAccountsItem()
+    IGAccountsItem(currentUser.username)
 }
 
 @Composable
-fun IGAccountsItem() {
+fun IGAccountsItem(
+    account: String
+) {
     Row(
         Modifier
             .padding(16.dp),
@@ -294,7 +296,7 @@ fun IGAccountsItem() {
         var toggleState by remember { mutableStateOf(false) }
         StoryImage(imageUrl = profilePicture.get(1).image, weight = Modifier.weight(1f))
         Text(
-            text = "namaste_maniac",
+            text = account,
             style = MaterialTheme.typography.h6.copy(fontSize = 16.sp),
             color = Color.Black,
             modifier = Modifier
