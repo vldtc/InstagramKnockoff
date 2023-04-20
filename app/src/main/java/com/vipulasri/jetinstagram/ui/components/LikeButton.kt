@@ -129,7 +129,10 @@ private fun LikeButtonPreview() {
       user = User(
         name = names.first(),
         username = names.first(),
-        image = "https://randomuser.me/api/portraits/men/1.jpg"
+        image = "https://randomuser.me/api/portraits/men/1.jpg",
+        postsCount = 123,
+        followersCount = "9.2K",
+        followingCount = "1.3K"
       ),
       likesCount = 100,
       commentsCount = 20,

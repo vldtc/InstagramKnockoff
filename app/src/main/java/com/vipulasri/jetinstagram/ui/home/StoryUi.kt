@@ -16,7 +16,7 @@ import coil.compose.rememberImagePainter
 import com.vipulasri.jetinstagram.ui.components.diagonalGradientBorder
 
 @Composable
-fun StoryImage(imageUrl: String) {
+fun StoryImage(imageUrl: String, weight: Modifier) {
   val shape = CircleShape
   Box(
     modifier = Modifier

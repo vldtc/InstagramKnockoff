@@ -22,7 +22,7 @@ object StoriesRepository {
         )
     )
 
-    (0..9).forEach { index ->
+    (0..11).forEach { index ->
       val story = Story(
           image = "https://randomuser.me/api/portraits/men/${index + 1}.jpg",
           name = names[index]

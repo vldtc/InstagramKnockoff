@@ -9,7 +9,6 @@ import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.withContext
 
-@OptIn(ExperimentalCoroutinesApi::class)
 object PostsRepository {
 
   private val _posts = mutableStateOf<List<Post>>(emptyList())
@@ -17,14 +16,17 @@ object PostsRepository {
 
   private fun populatePosts() {
     val posts = ArrayList<Post>()
-    (0..9).forEach { index ->
+    (0..11).forEach { index ->
       val post = Post(
           id = index + 1,
           image = "https://source.unsplash.com/random/400x300?$index",
           user = User(
               name = names[index],
               username = names[index],
-              image = "https://randomuser.me/api/portraits/men/${index + 1}.jpg"
+              image = "https://randomuser.me/api/portraits/men/${index + 1}.jpg",
+              postsCount = 123,
+              followersCount = "9.2K",
+              followingCount = "1.3K"
           ),
           likesCount = index + 100,
           commentsCount = index + 20,

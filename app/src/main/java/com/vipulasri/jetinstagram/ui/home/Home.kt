@@ -106,7 +106,10 @@ private fun StoriesList(stories: List<Story>) {
         horizontalAlignment = Alignment.CenterHorizontally,
         modifier = Modifier.padding(vertical = 5.dp, horizontal = 6.dp)
       ) {
-        StoryImage(imageUrl = story.image)
+        StoryImage(
+          imageUrl = story.image, weight = Modifier
+            .weight(1f)
+        )
         Spacer(modifier = Modifier.height(5.dp))
         Text(story.name, style = MaterialTheme.typography.caption)
       }

@@ -26,5 +26,21 @@ val names = arrayOf(
     "shrish",
     "matdo",
     "phillsohn",
-    "deitch"
+    "deitch",
+    "vladutc",
+    "adamm"
+)
+val usernames = arrayOf(
+    "Store Ezekiel",
+    "Niany Chan",
+    "Opiok Earl",
+    "Ashok Email",
+    "Dark Emeralds",
+    "Bedta Neil",
+    "Shrish Hirsh",
+    "Matdo Madi",
+    "Phill Sohn",
+    "Deitch Mitch",
+    "Vladut Cirlan",
+    "Adam Mukkarim"
 )
